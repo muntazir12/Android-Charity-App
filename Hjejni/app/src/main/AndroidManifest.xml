@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hjejni">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:name="com.hjejni.AppController"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:icon="@mipmap/ic_launcher"
+        tools:ignore="HardcodedDebugMode">
+        <activity
+            android:name="com.hjejni.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hjejni.LoginActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.hjejni.RegisterActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.hjejni.HajBtn"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.hjejni.UmrahBtn"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.hjejni.HajView"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.hjejni.UmrahView"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.hjejni.MessageBtn"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.hjejni.MessageView"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.hjejni.ProfileActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.hjejni.DonorBtn"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.hjejni.InternetActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.hjejni.SentMessage"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.hjejni.RMessageView"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity android:name=".FirstLaunch"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity android:name=".WelcomeActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity android:name=".HajPrevious"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity android:name=".UmrahPrevious"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+
+        <activity android:name=".mHajView"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity android:name=".mUmrahView"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity android:name=".ForgotActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity android:name=".AboutView"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity android:name=".PrivacyView"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+
+
+    </application>
+
+</manifest>

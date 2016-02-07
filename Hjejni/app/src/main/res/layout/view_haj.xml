@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        ></include>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="6dp"
+        android:paddingLeft="6dp"
+        android:layout_marginTop="60dp">
+
+        <!-- Product id (pid) - will be HIDDEN - used to pass to other activity -->
+        <TextView
+            android:id="@+id/pid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/remail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_marginTop="400dp"
+            />
+
+        <!-- Name Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="@string/str_name"
+            android:textSize="19dp"
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:id="@+id/Lname"
+            android:textColor="@color/ColorPrimaryDark" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dip"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/Lname"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:paddingLeft="6dp"
+            android:text="@string/str_sdob"
+            android:textSize="17dp"
+            android:id="@+id/Lage"
+            android:textColor="@color/ColorPrimaryDark"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/age"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/Lage"
+            android:layout_marginTop="60dp"
+            android:textSize="17dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:paddingLeft="6dp"
+            android:text="@string/str_country"
+            android:textSize="17dp"
+            android:id="@+id/Lcountry"
+            android:textColor="@color/ColorPrimaryDark"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/country"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/Lcountry"
+            android:textSize="17dp"
+            android:layout_marginTop="110dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:paddingLeft="6dp"
+            android:text="@string/str_status"
+            android:textSize="17dp"
+            android:id="@+id/Lfamily"
+            android:textColor="@color/ColorPrimaryDark"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/family"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/Lfamily"
+            android:layout_marginTop="170dp"
+            android:textSize="17dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:paddingLeft="70dp"
+            android:text="@string/str_gender"
+            android:textSize="17dp"
+            android:id="@+id/Lgender"
+            android:textColor="@color/ColorPrimaryDark"
+            android:layout_toRightOf="@+id/family"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gender"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/Lgender"
+            android:textSize="17dp"
+            android:layout_marginTop="170dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="230dp"
+            android:paddingLeft="6dp"
+            android:text="@string/str_dep"
+            android:textSize="17dp"
+            android:id="@+id/Ldependent"
+            android:textColor="@color/ColorPrimaryDark"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dependent"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/Ldependent"
+            android:layout_marginTop="230dp"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="290dp"
+            android:paddingLeft="6dp"
+            android:text="@string/str_stts"
+            android:textSize="17dp"
+            android:id="@+id/Lstatus"
+            android:textColor="@color/ColorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/status"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/btn_logut_bg"
+            android:layout_toRightOf="@+id/Lstatus"
+            android:layout_marginTop="290dp"
+            android:textSize="17dp"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:paddingLeft="6dp"
+            android:text="@string/str_view"
+            android:textSize="17dp"
+            android:id="@+id/request"
+            android:textColor="@color/ColorPrimaryDark"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_mes"
+            android:textColor="@color/white"
+            android:background="@color/ColorPrimary"
+            android:id="@+id/btnmessage"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/remail"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:id="@+id/search1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:hint="Search"
+        android:textColorHint="@color/ColorPrimary"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/frameLayout"
+        android:layout_below="@+id/search1">
+
+    <ListView android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+
+    <TextView
+        android:id="@+id/empty"
+        android:text="@string/no_mes"
+        android:layout_width="fill_parent"
+        android:layout_height="483dp"
+        android:gravity="center"
+        android:layout_above="@+id/button" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Sent Messages"
+            android:background="@color/ColorPrimary"
+            android:textColor="@color/white"
+            android:layout_gravity="bottom"
+            android:id="@+id/button" />
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>

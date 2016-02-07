@@ -1,0 +1,53 @@
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        ></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Change Status to : "
+        android:layout_marginLeft="6dp"
+        android:textSize="20dp"
+        android:layout_below="@id/tool_bar"
+        android:textColor="@color/ColorPrimaryDark"
+        android:id="@+id/Lstatus"/>
+
+    <Spinner
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Lstatus"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="6dp"
+        android:entries="@array/status_arrays"
+        android:layout_below="@id/tool_bar"
+        android:spinnerMode="dialog"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnstatus"
+        android:text="Change Status"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="6dp"
+        android:layout_below="@id/tool_bar"
+        android:layout_marginRight="6dp"
+        android:background="@color/ColorPrimary"
+        android:textColor="@color/white"/>
+
+
+
+
+
+
+
+</RelativeLayout>
